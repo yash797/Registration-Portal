@@ -1,0 +1,18 @@
+.navbar-demo{
+    /* color: aqua; */
+    z-index: 1000;
+    /* text-align: center; */
+    /* left: 10px; */
+    /* font-size: larger; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 20px; */
+    /* background-color: rgba(0, 0, 0, 0.326); */
+}
+
+.yfooter{
+    /* position: absolute; */
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+}

@@ -1,0 +1,26 @@
+:root {
+    --bg: rgb(11 17 32); /**Main Background*/
+
+     /**Headings, sub-headings, hover text*/
+    --text-white-000: rgb(255, 255, 255);
+    --text-white-50: rgb(248 250 252);
+    --text-white-200: rgb(226 232 240);
+    --text-white-300: rgb(203 213 225);
+    --text-white-400: rgb(148 163 184);
+    --text-white-500: rgb(100 116 139);
+
+     /**Box, input box, cards Background*/
+    --bg-white-700: rgb(51 65 85);
+    --bg-white-800: rgb(30 41 59);
+    --bg-white-900: rgb(15 23 42);
+
+     /**Links, highlight text, icons*/
+    --text-blue-300: rgb(125 211 252);
+    --text-blue-400: rgb(56 189 248);
+    --text-blue-500: rgb(14 165 233);
+    --text-blue-600: rgb(2 132 199);
+
+     /**buttons, hover Background*/
+    --bg-blue-400-10: rgba(56,189,248,.1);
+    --bg-blue-500: rgb(14 165 233);
+}
