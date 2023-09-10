@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import "./styles/testimonials.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,106 +11,105 @@ import "swiper/css/effect-coverflow";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 const testimonials = (props) => {
-const info = [
-  {
-    name: "Vedant Daigavne",
-    position: "Engineering at Upstox",
-    img: "https://media.licdn.com/dms/image/D4D03AQH7twfuLl2iKg/profile-displayphoto-shrink_400_400/0/1668706658393?e=1676505600&v=beta&t=u3p-hEePsrTZkMvFfBMdqt_XGSdtzGwjRRup2RzPQd0",
-    company:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
-    testimonials:
-      "PCSB gave me a platform to explore different domains and contribute to building other websites. I enjoyed my time in PCSB, whether it was to manage an event or guide juniors in developing their skillsets.",
-  },
-  {
-    name: "Amit Purohit",
-    position: "Upcoming Analyst at Deutsche Bank",
-    img: "https://drive.google.com/uc?export=view&id=1uYiOPXS_bOQDcHHwZf6EwCqOO07p3L_o",
-    company:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
-    testimonials:
-      "I joined PCSB in my second year, along with my friends, to explore the club. Our then heads chose me as a developer for building the PCSB website. So the journey started there, and the club became like a family as time passed. Building projects for the club and guiding juniors taught me a lot. I hope this legacy continues.",
-  },
-  {
-    name: "Sunand Goel",
-    position: "Upcoming Analyst at Barclays",
-    img: "https://drive.google.com/uc?export=view&id=1Y5O8JStaM5gqIQyjI1zl9bOdWwoDN5Tc",
-    // company: "https://logo-sign.com/logos/Deutsche-bank-logo.png",
-    testimonials:
-      "PCSB gave me the opportunity to work on live projects that eventually helped me score internship. It was PCSB through which I got a chance to strengthen my network, it gave me a chance to interact personally with  Founders, Directors, VPs, Content Creator and alumni working in various tech fields.",
-  },
-  {
-    name: "Yash Rajput",
-    position: "Upcoming Software Developer at media.net",
-    img: "https://pps.whatsapp.net/v/t61.24694-24/267396679_118027147799061_5796901660932740601_n.jpg?ccb=11-4&oh=01_AdTPCjmBwHU0gxh8qQR7Z1iutnlL77-jfMWClw8DRyYdIg&oe=63A85ABA",
-    company:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
-    testimonials:
-      "PCSB is a platform where you can talk and discuss almost anything with your seniors without hesitation. It also provides an environment where you can learn more about industry-level things, and the bond with seniors is so strong that they support you at every point. I joined PCSB as a member of the cp team and met such outstanding seniors who helped me grow from a plant to a tree.",
-  },
-  {
-    name: "Sania Edlabadkar",
-    position: "Upcoming Analyst at Goldman Sachs",
-    img: "https://media.licdn.com/dms/image/D5635AQGFOgTLaOaViA/profile-framedphoto-shrink_100_100/0/1659371876130?e=1671721200&v=beta&t=kFlRezkGEuQjJVT7mXkGg7teH0XMj6nb4hjgXlp5RWQ",
-    company:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
-    testimonials:
-      "Being in PCSB has helped me grow personally as well as professionally. PCSB has made me resourceful.  It has instilled in me entrepreneurial and leadership qualities. All the experience gained in hosting events and seeing them through till the end has also helped me in my placement interviews.",
-  },
-  {
-    name: "Shantanu Jain",
-    position: "Upcoming Software Developer at Rythmflows",
-    img: "https://media.licdn.com/dms/image/C5603AQFNb7cWJ8Z1lw/profile-displayphoto-shrink_800_800/0/1630987834109?e=1676505600&v=beta&t=RQM4BdI2I_daCXyRScmZUxYoKSy8-a8fOObe7wRxgzo",
-    company:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
-    testimonials:
-      "Being in PCSB helped me to manage time and prioritize things and improve team management and people handling skills by being guided by seniors and then guiding the juniors. All the technical experience gained helped me in my internship also.",
-  },
-];
-// const Swiper = new Swiper('.swiper', {
-//   // Default parameters
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   // Responsive breakpoints
-//   breakpoints: {
-    // when window width is >= 320px
-    // 320: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 20
-    // },
-    // // when window width is >= 480px
-    // 480: {
-    //   slidesPerView: 3,
-    //   spaceBetween: 30
-    // },
-    // // when window width is >= 640px
-    // 640: {
-    //   slidesPerView: 4,
-    //   spaceBetween: 40
-    // }
-//   }
-// })
-// var Swiper = new Swiper(".swiper", {
-//   // Default parameters
-//   slidesPerView: 3,
-//   spaceBetween: 50,
-//   // Responsive breakpoints
-//   breakpoints: {
-//     // when window width is <= 499px
-//     499: {
-//       slidesPerView: 1,
-//       spaceBetweenSlides: 50,
-//     },
-//     // when window width is <= 999px
-//     999: {
-//       slidesPerView: 3,
-//       spaceBetweenSlides: 50,
-//     },
-//   },
-// });
+  const info = [
+    {
+      name: "Vedant Daigavne",
+      position: "Engineering at Upstox",
+      img: "https://media.licdn.com/dms/image/D4D03AQGlewC88lOlGg/profile-displayphoto-shrink_100_100/0/1692378828386?e=1700092800&v=beta&t=xYfFtqIqjO0DS0rc-ImutrlHP6663SKRumpMVI1T2Gs",
+      company:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      testimonials:
+        "PCSB gave me a platform to explore different domains and contribute to building other websites. I enjoyed my time in PCSB, whether it was to manage an event or guide juniors in developing their skillsets.",
+    },
+    {
+      name: "Amit Purohit",
+      position: "Upcoming Analyst at Deutsche Bank",
+      img: "https://drive.google.com/uc?export=view&id=1uYiOPXS_bOQDcHHwZf6EwCqOO07p3L_o",
+      company:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      testimonials:
+        "I joined PCSB in my second year, along with my friends, to explore the club. Our then heads chose me as a developer for building the PCSB website. So the journey started there, and the club became like a family as time passed. Building projects for the club and guiding juniors taught me a lot. I hope this legacy continues.",
+    },
+    {
+      name: "Sunand Goel",
+      position: "Upcoming Analyst at Barclays",
+      img: "https://drive.google.com/uc?export=view&id=1Y5O8JStaM5gqIQyjI1zl9bOdWwoDN5Tc",
+      // company: "https://logo-sign.com/logos/Deutsche-bank-logo.png",
+      testimonials:
+        "PCSB gave me the opportunity to work on live projects that eventually helped me score internship. It was PCSB through which I got a chance to strengthen my network, it gave me a chance to interact personally with  Founders, Directors, VPs, Content Creator and alumni working in various tech fields.",
+    },
+    {
+      name: "Yash Rajput",
+      position: "Upcoming Software Developer at media.net",
+      img: "https://media.licdn.com/dms/image/C4D03AQExiflZTgO1qw/profile-displayphoto-shrink_100_100/0/1662151079888?e=1700092800&v=beta&t=LxkXPl32dukIm1iYmFkGNObwmSWEmvVEamAglWeLEiI",
+      company:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      testimonials:
+        "PCSB is a platform where you can talk and discuss almost anything with your seniors without hesitation. It also provides an environment where you can learn more about industry-level things, and the bond with seniors is so strong that they support you at every point. I joined PCSB as a member of the cp team and met such outstanding seniors who helped me grow from a plant to a tree.",
+    },
+    {
+      name: "Sania Edlabadkar",
+      position: "Upcoming Analyst at Goldman Sachs",
+      img: "https://media.licdn.com/dms/image/D5635AQGFOgTLaOaViA/profile-framedphoto-shrink_100_100/0/1659371876130?e=1694973600&v=beta&t=51gNxQf4h4uBFw6Xk54tOpHtiym4jq4y9MrnRnNtvWc",
+      company:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      testimonials:
+        "Being in PCSB has helped me grow personally as well as professionally. PCSB has made me resourceful.  It has instilled in me entrepreneurial and leadership qualities. All the experience gained in hosting events and seeing them through till the end has also helped me in my placement interviews.",
+    },
+    {
+      name: "Shantanu Jain",
+      position: "Upcoming Software Developer at Rythmflows",
+      img: "https://media.licdn.com/dms/image/D4D03AQHi1By4QIcmMw/profile-displayphoto-shrink_100_100/0/1683921157527?e=1700092800&v=beta&t=FfAad0QvskOp-cXhL8C4FyYX1lZkMKnsBH8-5VktNJs",
+      company:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      testimonials:
+        "Being in PCSB helped me to manage time and prioritize things and improve team management and people handling skills by being guided by seniors and then guiding the juniors. All the technical experience gained helped me in my internship also.",
+    },
+  ];
+  // const Swiper = new Swiper('.swiper', {
+  //   // Default parameters
+  //   slidesPerView: 1,
+  //   spaceBetween: 10,
+  //   // Responsive breakpoints
+  //   breakpoints: {
+  // when window width is >= 320px
+  // 320: {
+  //   slidesPerView: 2,
+  //   spaceBetween: 20
+  // },
+  // // when window width is >= 480px
+  // 480: {
+  //   slidesPerView: 3,
+  //   spaceBetween: 30
+  // },
+  // // when window width is >= 640px
+  // 640: {
+  //   slidesPerView: 4,
+  //   spaceBetween: 40
+  // }
+  //   }
+  // })
+  // var Swiper = new Swiper(".swiper", {
+  //   // Default parameters
+  //   slidesPerView: 3,
+  //   spaceBetween: 50,
+  //   // Responsive breakpoints
+  //   breakpoints: {
+  //     // when window width is <= 499px
+  //     499: {
+  //       slidesPerView: 1,
+  //       spaceBetweenSlides: 50,
+  //     },
+  //     // when window width is <= 999px
+  //     999: {
+  //       slidesPerView: 3,
+  //       spaceBetweenSlides: 50,
+  //     },
+  //   },
+  // });
 
   return (
     <>
-
       <div className="container23">
         <div className="testim">
           <h1 className="testim-head mt-16">Our Seniors</h1>
@@ -176,9 +172,7 @@ const info = [
         >
           {info.map((member, i) => (
             <SwiperSlide key={`member${i}`}>
-              <div
-                className="h-auto w-[400px] rounded-lg bg-blue-900 bg-opacity-20 shadow-lg px-5 mt-36 mx-auto pb-10 transition ease-in-out hover:scale-105 transform -translate-y-2"
-              >
+              <div className="h-auto w-[400px] rounded-lg bg-blue-900 bg-opacity-20 shadow-lg px-5 mt-36 mx-auto pb-10 transition ease-in-out hover:scale-105 transform -translate-y-2">
                 <div className="w-full pt-1 mt-36 ">
                   <div className="overflow-hidden rounded-full border-4 border-full transition duration-300 ease-in-out transform hover:scale-110 border-cyan-600 w-24 h-24 -mt-16 mx-auto shadow-lg">
                     {/* <a href={linkedin ? linkedin : null} target="_blank" rel="noreferrer"> */}
@@ -236,4 +230,3 @@ const info = [
 };
 
 export default testimonials;
-
